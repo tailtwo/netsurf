@@ -40,6 +40,7 @@
 #include "framebuffer/framebuffer.h"
 #include "framebuffer/font.h"
 #include "framebuffer/bitmap.h"
+#include "framebuffer/font_internal.h"
 
 /* netsurf framebuffer library handle */
 static nsfb_t *nsfb;

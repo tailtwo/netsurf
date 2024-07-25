@@ -26,7 +26,7 @@
 /***** surface options *****/
 
 NSOPTION_INTEGER(fb_depth, 32)
-NSOPTION_INTEGER(fb_refresh, 70)
+NSOPTION_INTEGER(fb_refresh, 60)
 NSOPTION_STRING(fb_device, NULL)
 NSOPTION_STRING(fb_input_devpath, NULL)
 NSOPTION_STRING(fb_input_glob, NULL)
@@ -40,7 +40,7 @@ NSOPTION_INTEGER(fb_toolbar_size, 30)
 /** toolbar layout */
 NSOPTION_STRING(fb_toolbar_layout, NULL)
 /** enable on screen keyboard */
-NSOPTION_BOOL(fb_osk, false)
+NSOPTION_BOOL(fb_osk, true)
 
 /***** font options *****/
 
