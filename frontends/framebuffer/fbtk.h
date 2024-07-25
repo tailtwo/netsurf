@@ -25,6 +25,7 @@
 #define FB_FRAME_COLOUR 0xFFDDDDDD
 #define FB_COLOUR_BLACK 0xFF000000
 #define FB_COLOUR_WHITE 0xFFFFFFFF
+#define FB_COLOUR_LIGHTGREY 0xFFD3D3D3
 
 #define FBTK_WIDGET_PADDING 30 /**< percentage of widget size used for padding */ 
 #define FBTK_DPI 90 /**< screen DPI */
