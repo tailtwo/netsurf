@@ -271,8 +271,23 @@ fbtk_enable_oskb(fbtk_widget_t *fbtk)
 void 
 map_osk(void)
 {
+    if (osk->mapped) {
+        ;
+    }
+    else
+    {
 	fbtk_set_zorder(osk, INT_MIN);
 	fbtk_set_mapping(osk, true);
+    }
+}
+
+/* exported function documented in fbtk.h */
+bool unmap_osk(void) {
+    if (osk->mapped) {
+        fbtk_set_mapping(osk, false);
+        return true;
+    }
+    return false;
 }
 
 /*

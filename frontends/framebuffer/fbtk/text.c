@@ -310,12 +310,10 @@ text_input(fbtk_widget_t *widget, fbtk_callback_info *cbi)
 	bool caret_moved = false;
 
 	fb_text_font_style(widget, &fh, &border, &font_style);
-
 	if (cbi->event == NULL) {
 		/* gain focus */
 		if (widget->u.text.text == NULL)
 			widget->u.text.text = calloc(1,1);
-
 		return 0;
 	}
 
@@ -508,6 +506,7 @@ text_input_click(fbtk_widget_t *widget, fbtk_callback_info *cbi)
 			widget->height - border - border,
 			fb_text_input_remove_caret_cb);
 
+	//map_osk();
 	fbtk_request_redraw(widget);
 
 	return 0;
