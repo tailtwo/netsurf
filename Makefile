@@ -60,8 +60,8 @@ DEPROOT := $(OBJROOT)/deps
 TOOLROOT := $(OBJROOT)/tools
 
 # keep C flags from environment
-CFLAGS_ENV := $(CFLAGS)
-CXXFLAGS_ENV := $(CXXFLAGS)
+CFLAGS_ENV := $(CFLAGS) -Ofast -mtune=cortex-a7 -march=armv7ve+simd -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7ve+simd -lto -fno-fast-math
+CXXFLAGS_ENV := $(CXXFLAGS) -Ofast -mtune=cortex-a7 -march=armv7ve+simd -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7ve+simd -lto -fno-fast-math
 
 # library and feature building macros
 include Makefile.macros

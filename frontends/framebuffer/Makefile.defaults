@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------
 
 # Optimisation levels
-CFLAGS += -O2
+CFLAGS += -Ofast -mtune=cortex-a7 -march=armv7ve+simd -mfpu=neon-vfpv4 -mfloat-abi=hard -march=armv7ve+simd -lto
 
 # Framebuffer default surface provider.
 # Valid values are: x, sdl, linux, vnc, able,

@@ -49,7 +49,8 @@ user_agent_build_string(void)
                 sysname = un.sysname;
                 if (strcmp(sysname, "Linux") == 0) {
 			/* Force desktop, not mobile */
-                        sysname = "Android 13; Mobile";
+                        //sysname = "Android 13; Mobile";
+			sysname = "X11; Linux";
                 }
         }
 
